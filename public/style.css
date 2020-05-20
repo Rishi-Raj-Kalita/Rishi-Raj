@@ -1,0 +1,173 @@
+/*#################################  defaults  ################################*/
+
+body{
+    margin:0;
+    padding: 0;
+    background-image: url(https://ak.staticimgfarm.com/images/webtooltab/assets/nocache/wallpapers/scenic/themes/beach07_1920x1080.jpg);
+    background-repeat: no-repeat;
+
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after
+{
+    display: block;
+    clear: both;
+    content: "";
+}
+.col-1{width: 10%;}
+.col-2{width: 20%;}
+.col-3{width: 33.33%;}
+.col-4{width: 40%;}
+.col-5{width: 50%;}
+.col-6{width: 60%;}
+.col-7{width: 70%;}
+.col-8{width: 80%;}
+.col-9{width: 90%;}
+.col-10{width: 100%;}
+/*######################################## header ####################################*/
+.Header
+{
+    text-align: center;
+    margin: 0;
+    background:linear-gradient(to right,#ffffff,#999999) ;
+    opacity: 0.8;
+}
+.Header h1{
+    margin: 0;
+    opacity: 1;
+    font-weight: bolder;
+}
+/*##################################### AddItems ##########################################*/
+
+form.row
+{
+    display: block;
+    margin-left: 35%;
+}
+
+.row input[type="text"]
+{
+    padding: 5px;
+    margin:12px;
+    border-radius: 8px;
+    width: 300px;
+    opacity: 0.8;
+    font-size: 20px;
+    color:black;
+    box-shadow: 2px 0px 0px 2px #47476b;
+}
+.row button
+{
+    padding: 5px;
+    border-radius: 8px;
+    opacity: .7;
+    box-shadow: 2px 0px 0px 2px #47476b;
+}
+/*########################################### ListItems ##################################*/
+
+.box
+{
+    background: transparent;
+    border: black solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 8px;
+    min-height: 10px;
+    box-shadow: 2px 2px 0px 2px black;
+}
+.box .row h1
+{
+    text-align: left;
+    opacity: 1;
+    font-weight: bolder;
+    margin:0;
+    color: #f2f2f2;
+    padding: 5px;
+    margin-left: 80px;
+    text-shadow: 3px 2px black;
+}
+.bold
+{
+    opacity: 1;
+}
+
+.box .row
+{
+    margin: 5px;
+    border: black solid;
+    border-radius: 8px;
+
+}
+.col-2{
+    margin-bottom: 20px;
+}
+input[type="checkbox"]
+{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    opacity: .7;
+    box-shadow: 3px 1px black;
+    margin-right: 30px;
+}
+.trash
+{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 10px;
+    box-shadow: 3px 1px black;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+/*############################################ mobile #######################################*/
+@media screen and (max-width:680px)
+{
+    .Header h1 
+    {
+        font-size: 25px;
+    }
+    .row input[type="text"]
+    {
+        width: 200px;
+        margin-left: 30px;
+    }
+    .box{
+        margin: 4px;
+    }
+    .box .row h1
+    {
+        font-size: 25px;
+        margin-left: 0;
+        padding: 5px;
+    }
+    .row .trash
+    {
+        font-size: 20px;
+        padding: 0;
+    }
+    form.row {
+        margin-left: 0;
+    }
+    .trash
+    {
+        margin: 0;
+    }
+    input[type="checkbox"]
+    {
+        margin:0;
+        margin-right: 10px;
+    }
+    .col-2{
+        margin-bottom: 0;
+    }
+
+}
+
